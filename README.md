@@ -1,6 +1,3 @@
-# Project Zephyr
-*Project Zephyr Version 0.2.1*
-
 README last updated on *August 11, 2023*
 
 Developers:
@@ -14,57 +11,9 @@ With the data networked through json structure, the key is used as a variable na
 # ALL USERS WILL NOW HAVE A TOKEN 
 
 
-## Our Database
-Database uses Google Firebase Realtime database. Implements a NoSQL structure.
+## Database
+Database uses Google Firebase Realtime database.
 
-## Using Virtual Environment
-### Installing virtualenv
-```
-pip install virtualenv
-```
-### Creating a virtual environement
-
-<sub>Unfortunately, I think you have to create a new venv everytime you create a branch. It would not let me upload the venv.</sub>
-
-There is a script that will install the venv and the necessary packages
-
-Move into the main Zephyr directory
-
-For Windows, run
-```
-setup_venv.bat
-```
-
-For Linux/Mac
-```
-./setup_venv.sh
-```
-
-### Activating Virtual Environment
-
-**DO THIS EVERY TIME**
-
-For Linux/Mac
-
-```
-source venv/bin/activate
-```
-For Windows
-```
-venv\Scripts\activate.bat
-```
-
-### Deactivate Venv with
-```
-deactivate
-```
-
-## External Packages
-### Installing External Packages
-To install all external packages
-```
-pip install -r requirements.txt
-```
 ### List of External Python Packages
 **This should be updated as soon as you install a module**
 - flask
@@ -93,57 +42,6 @@ The server is also accesible from a device on your local network
 
 
 
-
-## React Native Installation and setup guide:
-First things first, Clone the repository using git
-1. Install Node.js and Python: You can download Node.js and Python from their official websites. https://nodejs.org/en/download, you should already have python installed from the API development.
-
-2. Install Java Development Kit (JDK): You can download the JDK from the Oracle website. https://www.oracle.com/java/technologies/downloads/#jdk20-windows
-
-3. For this stage of development, we will be using Expo Go to simulate the device that we are coding on, it is not necessary to follow steps 4 and 5 until we want to start working with device-native features, which will be in a later stage of development. 
-
-4. **(Optional) Install Android Studio (for Android development):** You can download Android Studio from here. During the installation process, make sure to check the boxes next to all of the following items:
-
-a. Android SDK
-
-b. Android SDK Platform
-
-c. Android Virtual Device
-
-If the checkboxes are grayed out, you might need to update the installation path of Android Studio to a path without spaces.
-Also, make sure that the ANDROID_HOME environment variable is set to the installation path of your Android SDK. The SDK is usually located in 
-```
-%LOCALAPPDATA%\Android\Sdk.
-```
-5. **(Optional) When developing for IOS, a Mac will be required, and you must install XCode.**
-
-6. Install the React Native command line interface (CLI): Open a terminal window and run the following command to install the React Native CLI:
-```
-npm install -g react-native-cli
-```
-7. Install “React Native Tools” and “Babel JS” extensions in VSCode
-8. Restart VScode to ensure that everything is working in order
-
-9. Run the following commands:
-```
-npm install -g expo-cli
-```
-```
- expo init frontend
-```
-```
-cd frontend
-```
-```
-Npm start
-```
-
-10. Download the expo go app and scan QR code using camera
-
-# Zephyr API Feature Updates
-## Initialization
-Initial Structure of API
-
 Functions Added:
 
 Login Route
@@ -168,7 +66,6 @@ Home Route
 - Cannot be accessed unless logged in
 - Currently only sends back the logged in user's username
 
-## Phase 1
 
 Venv Install Scripts
 - Added Windows and MacOS/Linux scripts to install venv
@@ -208,12 +105,6 @@ Group Members Route
 User's Groups Route
 - Returns the 8 digit codes of the groups the user is in
 - Separates the codes by admin status and member status
-
-## Phase 2
-
-Basically back to prephase due to Google Firebase
-* Code is not fully complete, but wanted to push the new style of code so frontend client can see how data will be used 
-* Lots of code commented out, this will be fixed in the next push
 
 Implmentation of Google Firebase
 - Utilize Firebase Authenticaion
@@ -263,7 +154,6 @@ Group Routes
 - Firebase has not been implement into the group routes yet
 - Currently all commented out
 
-## Phase 2.1
 Deleted unnecessary clutter
 
 Optimized networking
