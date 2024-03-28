@@ -5,10 +5,6 @@ README last updated on *August 11, 2023*
 
 Developers:
 - Xavier Akers
-- Will Hayden
-- Fernando Ifill-Cueva
-
-
 
 ## Using git & GitHub
 There is a file named git-commands.txt that has a list of commands and a short description. Hopefully it should be enough information to start out. In the file, the commands are listed in somewhat chronological order of how they would be used the first time.
