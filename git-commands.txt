@@ -1,0 +1,63 @@
+Basic git commands and how to use them
+ALWAYS WORK IN A BRANCH AND NEVER THE MAIN
+Working in a branch will isolate your work and then when you push your branch to the repo, we can agree to merge it with the master branch
+
+pip install git
+    -install git if you have not already
+
+git config --global user.name <yourusername>
+    -should be your username
+
+git config --global user.email <youremail>
+    -obviously your email
+
+## if it asks for your password you must use your PAT
+## go to your github account
+## go to settings
+## go to the sidebar tab "Developer settings"
+## go to "Personal access tokens" and "Tokens (classic)"
+## copy your token and use it as your password
+
+
+git clone <html.git>
+    downloads the respective repository
+
+git branch
+    -list your branches on your local machine
+
+git branch <newbranchname>
+    -creates your branch to workon
+
+git fetch origin <branchname>
+    -idk what it does but it makes me do it before pull
+
+git pull origin <branchname>
+    -origin is the alias for the github repository
+    -updates the respective branch on your local machine
+
+git checkout <branchname>
+    -put you in that branch so you can work on it without affecting the main branch
+    -ALWAYS WORK ON CODE IN YOUR BRANCH AND NOT THE MAIN BRANCH
+ 
+ git status
+    -shows you files that you have changed in your branch that have not yet been commited
+    -shows which files are in the staging area
+
+ git add .
+    -add all new files to the staging area of your respective branch (should never be the main branch)
+
+git commit -m "<commit desciption>"
+    -commits the files in the staging area to the respective branch (again should never be the main branch)
+    -always add a desciption so everyone knows what was added
+    
+git push origin <branchname>
+    -pushes your branch to the github repo where we can decide to merge it with the main branch
+    -SHOULD NEVER PUSH THE MAIN BRANCH
+
+
+git branch --delete <branchname>
+    -deletes branchname
+
+git log
+    -shows commit history
+    - "--oneline" tag shows a condensed version
