@@ -3,14 +3,6 @@ README last updated on *August 11, 2023*
 Developers:
 - Xavier Akers
 
-## Using git & GitHub
-There is a file named git-commands.txt that has a list of commands and a short description. Hopefully it should be enough information to start out. In the file, the commands are listed in somewhat chronological order of how they would be used the first time.
-
-## API Structure
-With the data networked through json structure, the key is used as a variable name and the data as the values. Hoping this will ease the process of integrating the client. You will have to take a look at the values passed to make sure the data is being used correctly. For routes like login and register, if the user is already logged in, it sends a json with {"url":url}, and this will pass a new route name that can be used to call the correct route. 
-# ALL USERS WILL NOW HAVE A TOKEN 
-
-
 ## Database
 Database uses Google Firebase Realtime database.
 
@@ -39,8 +31,6 @@ As of right now it is running on port 5000 but this can always be changed.
 The server is also accesible from a device on your local network
 
 **Data sent between the api and the client is in json format**
-
-
 
 Functions Added:
 
